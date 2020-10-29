@@ -72,8 +72,7 @@ def search(fl,r,b):
 def dumpfl():
 	r=requests.Session()
 	r.get("https://mbasic.facebook.com/login")
-	r.headers.update({"User-Agent":"Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Mobile Safari/537.36"})
-	r.post("https://mbasic.facebook.com/login", data={"email":raw_input("?: email: "),"pass":raw_input("?: passs: ")}).url
+	r.headers.update
 	if "c_user" in r.cookies.get_dict():
 		fl=raw_input("?: filename: ")
 		s=raw_input("?: search query: ")
@@ -82,7 +81,7 @@ def dumpfl():
 
 
 while True:
-	print "[1] Dump id By Search Name"
+	print "[1] Dump id Cari Nama"
 	print "[2] Crack\n"
 	r=raw_input("?: pilih: ")
 	if r=="":
